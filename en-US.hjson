@@ -234,6 +234,11 @@ Mods: {
 					Tooltip: ""
 				}
 
+				MutantFtw: {
+					Label: Mutant Ftw
+					Tooltip: ""
+				}
+
 				ToggleAllSoulsMusicOverrides: {
 					Label: Toggle All Souls Music Overrides
 					Tooltip: ""

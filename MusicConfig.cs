@@ -17,5 +17,17 @@ namespace knishfargomusic
         [ReloadRequired]
         public bool OverrideModdedMusicBoxes;
 
+        [DefaultValue(true)]
+        public bool OverrideMutantTheme
+        {
+            get; set;
+        }
+
+        [DefaultValue(true)]
+        public bool MutantFtw
+        {
+            get; set;
+        }
+
     }
 }
