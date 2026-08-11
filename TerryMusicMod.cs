@@ -59,7 +59,7 @@ namespace knishfargomusic
                     "WAiKURO - Androgynous (Full Phase)"
                 );
                 TryMapMusic(
-                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/LieFlightNoCum"),
+                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/LieflightNoCum"),
                     "EltnumTheme",
                     "UNI2 OST - Blood Drain -Again- (Eltnum Theme)"
                 );
