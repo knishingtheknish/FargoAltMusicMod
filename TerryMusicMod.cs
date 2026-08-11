@@ -103,103 +103,12 @@ namespace knishfargomusic
                     "Labyrinthox",
                     "Paradigm: Reboot - LABYRINTHOX"
                 );
+				TryMapMusic(
+                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
+                    "UndyingMacula",
+                    "Ashrount - Undying Macula ~penumbra~"
+				);
             }
         }
 	}
-
-    // imported from AltMusicSceneEffect because
-    abstract class MusicEffect : ModSceneEffect
-    {
-        public abstract string MusicName { get; }
-        public int timer;
-        public const int IMMERSIVE_SONG_TIME = 120;
-        public override int Music => MusicLoader.GetMusicSlot(Mod, $"Music/{MusicName}");
-        public override bool IsSceneEffectActive(Player player)
-        {
-            return Active(player);
-        }
-        public override float GetWeight(Player player) => 0.6f;
-        public abstract bool MyMusicConfig { get; }
-        public abstract NPC TryGetActiveNPC { get; }
-        public abstract string DisplayMusicName { get; }
-        public virtual bool Active(Player player)
-        {
-            if (!MyMusicConfig)
-                return false;
-            NPC npc = TryGetActiveNPC;
-            if (npc != null)
-                timer = true ? MusicEffect.IMMERSIVE_SONG_TIME : 6;
-            if (timer > 0)
-            {
-                if (!true || (npc == null && !(Main.LocalPlayer.active && Main.LocalPlayer.dead)))
-                    timer--;
-                TerryMusicSystem.nowPlayingString = DisplayMusicName;
-                return true;
-            }
-            return false;
-        }
-    }
-
-    static class MusicUtils
-    {
-        private static Mod souls = null;
-        private static bool checkedSouls = false;
-        public static Mod Souls
-        {
-            get
-            {
-                if (!checkedSouls)
-                {
-                    checkedSouls = true;
-                    if (ModLoader.HasMod("FargowiltasSouls"))
-                        souls = ModLoader.GetMod("FargowiltasSouls");
-                }
-                return souls;
-            }
-        }
-
-        public static bool BossMusicRange(this NPC npc)
-        {
-            int range = 5500;
-            Rectangle value = new Rectangle((int)(npc.position.X + (float)(npc.width / 2)) - range, (int)(npc.position.Y + (float)(npc.height / 2)) - range, range * 2, range * 2);
-            Rectangle rectangle = new Rectangle((int)Main.screenPosition.X, (int)Main.screenPosition.Y, Main.screenWidth, Main.screenHeight);
-            return (rectangle.Intersects(value));
-        }
-
-        public static NPC FindClosestBoss(int type)
-        {
-            float num = 99999;
-            NPC closestNPC = null;
-            foreach (NPC npc in npc.Where(n => n != null && n.active && n.type == type))
-            {
-                if (npc.BossMusicRange() && npc.Distance(LocalPlayer.Center) < num)
-                {
-                    num = npc.Distance(LocalPlayer.Center);
-                    closestNPC = npc;
-                }
-            }
-            return closestNPC;
-        }
-
-        public static NPC FindClosestSoulsBoss(string name)
-        {
-            if (MusicUtils.Souls == null)
-                return null;
-            return FindClosestBoss(Souls.Find<ModNPC>(name).Type);
-        }
-
-    }
-
-    #region Bosses
-    class Mutant : MusicEffect
-    {
-        public override SceneEffectPriority Priority => (SceneEffectPriority)9;
-        private bool useAltMusic => MusicConfig.Instance.MutantFtw &&
-            (MusicUtils.Souls.Version >= Version.Parse("1.8") ? (bool)MusicUtils.Souls.Call("MasochistMode") : Main.getGoodWorld);
-        public override string MusicName => useAltMusic ? "ErodingThePore" : "UndyingMacula";
-        public override bool MyMusicConfig => (MusicUtils.Souls != null) && (MusicConfig.Instance.OverrideMutantTheme || useAltMusic);
-        public override NPC TryGetActiveNPC => MusicUtils.FindClosestSoulsBoss("MutantBoss");
-        public override string DisplayMusicName => useAltMusic ? "Ashrount - eroding the \"pore\" (interlude)" : "Ashrount - Undying Macula ~penumbra~";
-    }
-    #endregion
 }
