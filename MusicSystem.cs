@@ -112,7 +112,7 @@ namespace knishfargomusic
                     break;
 
                 case MusicID.UndergroundCorruption:
-                    i = GetMusic("RiverTwygzBed");
+                    i = GetMusic("Music_10");
                     TerryMusicSystem.nowPlayingString = "Hollow Knight OST - Kingdom's Edge";
                     break;
 
