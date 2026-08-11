@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 
-namespace TerryMusicMod
+namespace knishfargomusic
 {
-	public class TerryMusicMod : Mod
+	public class knishfargomusic : Mod
 	{
-		internal static TerryMusicMod Instance;
+		internal static knishfargomusic Instance;
 		public override void Load()
 		{
 			Instance = this;

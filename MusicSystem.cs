@@ -9,11 +9,11 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace TerryMusicMod
+namespace knishfargomusic
 {
     public class MusicSystem : ModSystem
     {
-        public static int GetMusic(string name) => MusicLoader.GetMusicSlot(TerryMusicMod.Instance, $"Music/{name}");
+        public static int GetMusic(string name) => MusicLoader.GetMusicSlot(knishfargomusic.Instance, $"Music/{name}");
 
         private const BindingFlags UniversalBindingFlags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
         public override void Load()
@@ -304,9 +304,9 @@ namespace TerryMusicMod
                     TerryMusicSystem.nowPlayingString = "Nier Automata OST - Weight of The World/The End of YorHa";
                     break;
             }
-            if (TerryMusicMod.Instance.moddedMusicDict.ContainsKey(i))
+            if (knishfargomusic.Instance.moddedMusicDict.ContainsKey(i))
             {
-                var tuple = TerryMusicMod.Instance.moddedMusicDict[i];
+                var tuple = knishfargomusic.Instance.moddedMusicDict[i];
                 //Main.NewText($"get! {i} {tuple.ToString()}");
                 i = GetMusic(tuple.Item1);
                 TerryMusicSystem.nowPlayingString = tuple.Item2;

@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.UI;
 
-namespace TerryMusicMod.UI
+namespace knishfargomusic.UI
 {
     public class NowPlayingNotif : IInGameNotification
     {

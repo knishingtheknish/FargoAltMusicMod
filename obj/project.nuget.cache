@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BzUuKCT01q0=",
+  "dgSpecHash": "4y45fV1wdPg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\knishfargomusic.csproj",
+  "projectFilePath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\knishfargomusic\\knishfargomusic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\knish\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],

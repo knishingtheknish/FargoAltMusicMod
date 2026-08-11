@@ -36,11 +36,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\knishfargomusic.csproj",
-      "projectName": "TerryMusicMod",
-      "projectPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\knishfargomusic.csproj",
+      "projectUniqueName": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\knishfargomusic\\knishfargomusic.csproj",
+      "projectName": "knishfargomusic",
+      "projectPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\knishfargomusic\\knishfargomusic.csproj",
       "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\obj\\",
+      "outputPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\knishfargomusic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\knish\\AppData\\Roaming\\NuGet\\NuGet.Config",

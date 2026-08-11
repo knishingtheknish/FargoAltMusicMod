@@ -1,0 +1,263 @@
+Mods: {
+	knishfargomusic: {
+		Configs: {
+			MusicConfig: {
+				DisplayName: Music Config
+
+				NowPlayingEnum: {
+					Label: Now Playing Enum
+					Tooltip: ""
+				}
+
+				ImmersiveBossSongs: {
+					Label: Immersive Boss Songs
+					Tooltip: ""
+				}
+
+				DreamMusic: {
+					Label: Dream Music
+					Tooltip: ""
+				}
+
+				ItsBrin: {
+					Label: Its Brin
+					Tooltip: ""
+				}
+
+				OverrideModdedMusicBoxes: {
+					Label: Override Modded Music Boxes
+					Tooltip: ""
+				}
+
+				CopyrightMode: {
+					Label: Copyright Mode
+					Tooltip: ""
+				}
+
+				Headers: {
+					VanillaMusicOverrides: Override King Slime Theme Header
+					SoulsMusicOverrides: Override Trojan Squirrel Theme Header
+				}
+
+				OverrideKingSlimeTheme: {
+					Label: Override King Slime Theme
+					Tooltip: ""
+				}
+
+				OverrideEyeOfCthulhuTheme: {
+					Label: Override Eye Of Cthulhu Theme
+					Tooltip: ""
+				}
+
+				OverrideEaterOfWorldsTheme: {
+					Label: Override Eater Of Worlds Theme
+					Tooltip: ""
+				}
+
+				OverrideBrainOfCthulhuTheme: {
+					Label: Override Brain Of Cthulhu Theme
+					Tooltip: ""
+				}
+
+				OverrideQueenBeeTheme: {
+					Label: Override Queen Bee Theme
+					Tooltip: ""
+				}
+
+				OverrideSkeletronTheme: {
+					Label: Override Skeletron Theme
+					Tooltip: ""
+				}
+
+				OverrideDeerclopsTheme: {
+					Label: Override Deerclops Theme
+					Tooltip: ""
+				}
+
+				OverrideWallOfFleshTheme: {
+					Label: Override Wall Of Flesh Theme
+					Tooltip: ""
+				}
+
+				OverrideDreadnautilusTheme: {
+					Label: Override Dreadnautilus Theme
+					Tooltip: ""
+				}
+
+				OverrideQueenSlimeTheme: {
+					Label: Override Queen Slime Theme
+					Tooltip: ""
+				}
+
+				OverrideBanishedBaronTheme: {
+					Label: Override Banished Baron Theme
+					Tooltip: ""
+				}
+
+				OverrideSkeletronPrimeTheme: {
+					Label: Override Skeletron Prime Theme
+					Tooltip: ""
+				}
+
+				OverrideTwinsTheme: {
+					Label: Override Twins Theme
+					Tooltip: ""
+				}
+
+				OverrideDestroyerTheme: {
+					Label: Override Destroyer Theme
+					Tooltip: ""
+				}
+
+				OverridePlanteraTheme: {
+					Label: Override Plantera Theme
+					Tooltip: ""
+				}
+
+				OverrideGolemTheme: {
+					Label: Override Golem Theme
+					Tooltip: ""
+				}
+
+				OverrideBetsyTheme: {
+					Label: Override Betsy Theme
+					Tooltip: ""
+				}
+
+				OverrideDukeFishronTheme: {
+					Label: Override Duke Fishron Theme
+					Tooltip: ""
+				}
+
+				OverrideEmpressOfLightTheme: {
+					Label: Override Empress Of Light Theme
+					Tooltip: ""
+				}
+
+				OverrideLunaticCultistTheme: {
+					Label: Override Lunatic Cultist Theme
+					Tooltip: ""
+				}
+
+				OverrideLunarPillarsTheme: {
+					Label: Override Lunar Pillars Theme
+					Tooltip: ""
+				}
+
+				OverrideMoonLordTheme: {
+					Label: Override Moon Lord Theme
+					Tooltip: ""
+				}
+
+				ToggleAllVanillaMusicOverrides: {
+					Label: Toggle All Vanilla Music Overrides
+					Tooltip: ""
+				}
+
+				OverrideTrojanSquirrelTheme: {
+					Label: Override Trojan Squirrel Theme
+					Tooltip: ""
+				}
+
+				OverrideCursedCoffinTheme: {
+					Label: Override Cursed Coffin Theme
+					Tooltip: ""
+				}
+
+				OverrideDevianttTheme: {
+					Label: Override Deviantt Theme
+					Tooltip: ""
+				}
+
+				OverrideLifelightTheme: {
+					Label: Override Lifelight Theme
+					Tooltip: ""
+				}
+
+				OverrideTimberChampionTheme: {
+					Label: Override Timber Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideTerraChampionTheme: {
+					Label: Override Terra Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideNatureChampionTheme: {
+					Label: Override Nature Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideLifeChampionTheme: {
+					Label: Override Life Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideShadowChampionTheme: {
+					Label: Override Shadow Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideEarthChampionTheme: {
+					Label: Override Earth Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideSpiritChampionTheme: {
+					Label: Override Spirit Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideWillChampionTheme: {
+					Label: Override Will Champion Theme
+					Tooltip: ""
+				}
+
+				OverrideEridanusTheme: {
+					Label: Override Eridanus Theme
+					Tooltip: ""
+				}
+
+				OverrideAbominationnTheme: {
+					Label: Override Abominationn Theme
+					Tooltip: ""
+				}
+
+				OverrideMutantTheme: {
+					Label: Override Mutant Theme
+					Tooltip: ""
+				}
+
+				MutantFtwZzz: {
+					Label: Mutant Ftw Zzz
+					Tooltip: ""
+				}
+
+				ToggleAllSoulsMusicOverrides: {
+					Label: Toggle All Souls Music Overrides
+					Tooltip: ""
+				}
+			}
+
+			NowPlayingID: {
+				Tooltip: ""
+
+				None: {
+					Label: None
+					Tooltip: ""
+				}
+
+				Chat: {
+					Label: Chat
+					Tooltip: ""
+				}
+
+				Notification: {
+					Label: Notification
+					Tooltip: ""
+				}
+			}
+		}
+	}
+}

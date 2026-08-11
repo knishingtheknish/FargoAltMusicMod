@@ -1,4 +1,4 @@
-﻿namespace TerryMusicMod
+﻿namespace knishfargomusic
 {
     public enum NowPlayingID : int
     {
