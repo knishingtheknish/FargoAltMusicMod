@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "tModLoader.CodeAssist/0.1.5": {
@@ -31,24 +31,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dariu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\knish\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dariu\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\TerryMusicMod.csproj",
+      "projectUniqueName": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\knishfargomusic.csproj",
       "projectName": "TerryMusicMod",
-      "projectPath": "C:\\Users\\dariu\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\TerryMusicMod.csproj",
-      "packagesPath": "C:\\Users\\dariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dariu\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\obj\\",
+      "projectPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\knishfargomusic.csproj",
+      "packagesPath": "C:\\Users\\knish\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\knish\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerryMusicMod\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dariu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\knish\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,6 +55,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -74,10 +70,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "tModLoader.CodeAssist": {
@@ -101,7 +98,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
