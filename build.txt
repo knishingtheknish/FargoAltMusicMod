@@ -2,4 +2,5 @@ displayName = knish fargo music
 author = knish
 version = 0.1
 side = Client
-weakReferences  = FargowiltasSouls@1.7
+weakReferences = FargowiltasSouls@1.7,FargowiltasMusic@0.1.7
+homepage = https://github.com/knishingtheknish/FargoAltMusicMod

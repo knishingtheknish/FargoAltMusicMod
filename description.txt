@@ -1,6 +1,4 @@
 music that i use for fargo
 
-songs: to be filled out
-
 git: https://github.com/knishingtheknish/FargoAltMusicMod
 forked from: https://github.com/terrynmuse/FargoAltMusicMod
