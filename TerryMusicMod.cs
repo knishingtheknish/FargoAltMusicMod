@@ -21,8 +21,9 @@ namespace knishfargomusic
 		}
 
 		public Dictionary<int, Tuple<string, string>> moddedMusicDict = new Dictionary<int, Tuple<string, string>>();
+        private bool isFullyLoaded = false;
 
-        public bool overrideFtw => MusicConfig.Instance.MutantFtw;
+        public bool overrideFtw => MusicConfig.Instance.MutantFtwTheme;
 
         void TryMapMusic(int musicId, string newMusicIdPath, string newMusicName)
         {
@@ -31,10 +32,50 @@ namespace knishfargomusic
             moddedMusicDict.Add(musicId, new Tuple<string, string>(newMusicIdPath, newMusicName));
         }
 
+        // literally the worst bit of code ever written for a tmod
+        public void overrideMutantTheme_GodIWantToDie()
+        {
+            if (!isFullyLoaded) return;
+
+            if (!overrideFtw && ModLoader.TryGetMod("FargowiltasMusic", out Mod musicMod))
+            {
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia")] = new Tuple<string, string>(
+                    "UndyingMacula",
+                    "Ashrount - Undying Macula ~penumbra~"
+                );
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort")] = new Tuple<string, string>(
+                    "UndyingMacula",
+                    "Ashrount - Undying Macula ~penumbra~"
+                );
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue")] = new Tuple<string, string>(
+                    "ErodingThePore",
+                    "Ashrount - eroding the \"pore\" (interlude)"
+                );
+            }
+            else if (overrideFtw && ModLoader.TryGetMod("FargowiltasMusic", out Mod musicModA))
+            {
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicModA, "Assets/Music/Storia")] = new Tuple<string, string>(
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicModA, "Assets/Music/StoriaShort")] = new Tuple<string, string>(
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );
+                moddedMusicDict[MusicLoader.GetMusicSlot(musicModA, "Assets/Music/rePrologue")] = new Tuple<string, string>(
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );
+            }
+        }
+
         public override void PostSetupContent()
         {
-            if (/*MusicConfig.Instance.OverrideModdedMusicBoxes &&*/ ModLoader.TryGetMod("FargowiltasMusic", out Mod musicMod))
+            if (MusicConfig.Instance.OverrideModdedMusicBoxes && ModLoader.TryGetMod("FargowiltasMusic", out Mod musicMod))
             {
+                isFullyLoaded = true;
+                overrideMutantTheme_GodIWantToDie();
+
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Baron"),
                     "AtoBossTheme",
@@ -95,24 +136,21 @@ namespace knishfargomusic
                     "Labyrinthox",
                     "Paradigm: Reboot - LABYRINTHOX"
                 );
-
-                if (overrideFtw) {
-                    TryMapMusic(
-                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia"),
-                        "LostRequiem",
-                        "Ludicin - Lost Requiem"
-                    );
-                    TryMapMusic(
-                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
-                        "LostRequiem",
-                        "Ludicin - Lost Requiem"
-                    );
-                    TryMapMusic(
-                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue"),
-                        "LostRequiem",
-                        "Ludicin - Lost Requiem"
-                    );
-                }
+                /*TryMapMusic(
+                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia"),
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );
+                TryMapMusic(
+                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );
+                TryMapMusic(
+                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue"),
+                    "LostRequiem",
+                    "Ludicin - Lost Requiem"
+                );*/
             }
         }
 	}
