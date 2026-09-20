@@ -35,13 +35,13 @@ namespace knishfargomusic
             {
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Baron"),
-                    "Anger",
-                    "Sakuzyo - Anger"
+                    "AtoBossTheme",
+                    "Arknights OST - Ato Boss Theme"
                 );
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Baron2"),
-                    "Anger",
-                    "Sakuzyo - Anger"
+                    "AtoBossTheme",
+                    "Arknights OST - Ato Boss Theme"
                 );
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Champions"),
