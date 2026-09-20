@@ -5,18 +5,18 @@ Mods: {
 				DisplayName: Music Config
 
 				NowPlayingEnum: {
-					Label: Now Playing Enum
-					Tooltip: ""
+					Label: Now Playing Type
+					Tooltip: "Determines how the \"Now Playing\" text appears"
 				}
 
 				OverrideModdedMusicBoxes: {
-					Label: Override Modded Music Boxes
+					Label: Override Fargo Music
 					Tooltip: ""
 				}
 
 				MutantFtwTheme: {
-					Tooltip: ""
-					Label: Mutant Ftw Theme
+					Tooltip: "Changes Mutant's theme, meant for \"For The Worthy\" difficulty"
+					Label: Mutant For The Worthy Theme
 				}
 			}
 
@@ -25,17 +25,17 @@ Mods: {
 
 				None: {
 					Label: None
-					Tooltip: ""
+					Tooltip: "Disables the notification"
 				}
 
 				Chat: {
 					Label: Chat
-					Tooltip: ""
+					Tooltip: "Shows up in-game chat"
 				}
 
 				Notification: {
 					Label: Notification
-					Tooltip: ""
+					Tooltip: "Shows as a UI element on top of the window"
 				}
 			}
 		}
