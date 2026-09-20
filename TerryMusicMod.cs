@@ -22,6 +22,8 @@ namespace knishfargomusic
 
 		public Dictionary<int, Tuple<string, string>> moddedMusicDict = new Dictionary<int, Tuple<string, string>>();
 
+        public bool overrideFtw => MusicConfig.Instance.MutantFtw;
+
         void TryMapMusic(int musicId, string newMusicIdPath, string newMusicName)
         {
             if (musicId == 0)
@@ -79,11 +81,6 @@ namespace knishfargomusic
                     "DELTARUNE - Cutie Mew Mew Magic"
                 );
                 TryMapMusic(
-                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia"),
-                    "UndyingMacula",
-                    "Ashrount - Undying Macula ~penumbra~"
-                );
-                TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/TrojanSquirrel"),
                     "Shinobi",
                     "BlackY - Shinobi"
@@ -94,20 +91,28 @@ namespace knishfargomusic
                     "UNI2 OST - Aruku Sugata Ha Yuri No Hana (Yuzuriha Theme)"
                 );
                 TryMapMusic(
-                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue"),
-                    "ErodingThePore",
-                    "Ashrount - eroding the \"pore\" (interlude)"
-                );
-                TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/ShiftingSands"),
                     "Labyrinthox",
                     "Paradigm: Reboot - LABYRINTHOX"
                 );
-				TryMapMusic(
-                    MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
-                    "UndyingMacula",
-                    "Ashrount - Undying Macula ~penumbra~"
-				);
+
+                if (overrideFtw) {
+                    TryMapMusic(
+                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia"),
+                        "UndyingMacula",
+                        "Ashrount - Undying Macula ~penumbra~"
+                    );
+                    TryMapMusic(
+                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
+                        "UndyingMacula",
+                        "Ashrount - Undying Macula ~penumbra~"
+				    );
+                    TryMapMusic(
+                        MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue"),
+                        "ErodingThePore",
+                        "Ashrount - eroding the \"pore\" (interlude)"
+                    );
+                }
             }
         }
 	}
