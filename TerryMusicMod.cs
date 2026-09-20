@@ -99,18 +99,18 @@ namespace knishfargomusic
                 if (overrideFtw) {
                     TryMapMusic(
                         MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Storia"),
-                        "UndyingMacula",
-                        "Ashrount - Undying Macula ~penumbra~"
+                        "LostRequiem",
+                        "Ludicin - Lost Requiem"
                     );
                     TryMapMusic(
                         MusicLoader.GetMusicSlot(musicMod, "Assets/Music/StoriaShort"),
-                        "UndyingMacula",
-                        "Ashrount - Undying Macula ~penumbra~"
-				    );
+                        "LostRequiem",
+                        "Ludicin - Lost Requiem"
+                    );
                     TryMapMusic(
                         MusicLoader.GetMusicSlot(musicMod, "Assets/Music/rePrologue"),
-                        "ErodingThePore",
-                        "Ashrount - eroding the \"pore\" (interlude)"
+                        "LostRequiem",
+                        "Ludicin - Lost Requiem"
                     );
                 }
             }
