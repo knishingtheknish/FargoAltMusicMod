@@ -6,7 +6,7 @@ Mods: {
 
 				NowPlayingEnum: {
 					Label: Now Playing Type
-					Tooltip: "Determines how the \"Now Playing\" text appears"
+					Tooltip: Determines how the "Now Playing" text appears
 				}
 
 				OverrideModdedMusicBoxes: {
@@ -15,7 +15,7 @@ Mods: {
 				}
 
 				MutantFtwTheme: {
-					Tooltip: "Changes Mutant's theme, meant for \"For The Worthy\" difficulty"
+					Tooltip: Changes Mutant's theme, meant for "For The Worthy" difficulty
 					Label: Mutant For The Worthy Theme
 				}
 			}
@@ -25,17 +25,17 @@ Mods: {
 
 				None: {
 					Label: None
-					Tooltip: "Disables the notification"
+					Tooltip: Disables the notification
 				}
 
 				Chat: {
 					Label: Chat
-					Tooltip: "Shows up in-game chat"
+					Tooltip: Shows up in-game chat
 				}
 
 				Notification: {
 					Label: Notification
-					Tooltip: "Shows as a UI element on top of the window"
+					Tooltip: Shows as a UI element on top of the window
 				}
 			}
 		}

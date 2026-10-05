@@ -93,13 +93,13 @@ namespace knishfargomusic
                 );
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Laevateinn_P1"),
-                    "AndrogynousFullPhase",
-                    "WAiKURO - Androgynous (Full Phase)"
+                    "TheChaplain1",
+                    "Limbus Company OST - The Chaplain Phase 1"
                 );
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/Laevateinn_P2"),
-                    "AndrogynousFullPhase",
-                    "WAiKURO - Androgynous (Full Phase)"
+                    "TheChaplain2",
+                    "Limbus Company OST - The Chaplain Phase 2"
                 );
                 TryMapMusic(
                     MusicLoader.GetMusicSlot(musicMod, "Assets/Music/LieflightNoCum"),
